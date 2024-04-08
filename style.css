@@ -98,6 +98,15 @@ body {
   font-size: var(--fs-800);
 }
 
+.btn {
+  font-weight: var(--fw-bold);
+}
+
+.toggle-btn {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
 /* Utility classes */
 .flex-group {
   display: flex;
