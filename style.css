@@ -87,10 +87,15 @@ body {
 }
 
 /* Typography */
-.app-title {
+.app-title,
+.user-fullname,
+.stat-number {
   color: var(--clr-heading);
-  font-size: var(--fs-800);
   font-weight: var(--fw-bold);
+}
+
+.app-title {
+  font-size: var(--fs-800);
 }
 
 /* Utility classes */
