@@ -126,9 +126,9 @@ body {
   margin-inline: auto;
 }
 
-/* .card-header > .flex-group {
+.card-header > .flex-group {
   justify-content: space-between;
-} */
+}
 
 /* Utility classes */
 .grid-flow {
