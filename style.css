@@ -1,3 +1,13 @@
+:root {
+  /* Colors */
+  --clr-body: hsl(227, 100%, 98%);
+  --clr-background: hsl(0, 0%, 100%);
+  --clr-text: hsl(217, 35%, 45%);
+  --clr-toggle: hsl(217, 20%, 51%);
+
+  --clr-accent-500: hsl(212, 100%, 50%);
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
