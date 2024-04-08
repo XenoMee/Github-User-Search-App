@@ -108,6 +108,8 @@ body {
 
 .toggle-btn {
   color: var(--clr-toggle);
+  background-color: transparent;
+  border: none;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   gap: 1rem;
@@ -186,6 +188,10 @@ input[type='text'] {
   box-shadow: 0 0 1rem 2px rgba(0, 0, 0, 0.3);
 }
 
+.avatar {
+  max-width: 5rem;
+}
+
 .username {
   color: var(--clr-accent-500);
 }
@@ -214,6 +220,10 @@ input[type='text'] {
 
 .github-stats {
   justify-content: space-between;
+}
+
+.stat-name:not(:last-of-type) {
+  margin-inline-end: 0.5rem;
 }
 
 .info-item a {
