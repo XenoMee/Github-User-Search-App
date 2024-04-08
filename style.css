@@ -77,6 +77,12 @@ h6 {
 General
 */
 body {
+  background-color: var(--clr-body);
+  color: var(--clr-text);
+  font-family: var(--ff-base);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-regular);
+  line-height: 1.7;
   min-height: 100svh;
 }
 
