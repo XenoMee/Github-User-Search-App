@@ -6,6 +6,9 @@
   --clr-toggle: hsl(217, 20%, 51%);
 
   --clr-accent-500: hsl(212, 100%, 50%);
+
+  /* Font Family */
+  --fs-base: 'Space Mono', monospace;
 }
 
 /*
