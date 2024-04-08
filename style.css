@@ -9,7 +9,7 @@
   --clr-accent-500: hsl(212, 100%, 50%);
 
   /* Font Family */
-  --fs-base: 'Space Mono', monospace;
+  --ff-base: 'Space Mono', monospace;
 
   /* Font Weight */
   --fw-regular: 500;
@@ -78,4 +78,11 @@ General
 */
 body {
   min-height: 100svh;
+}
+
+/* Typography */
+.app-title {
+  color: var(--clr-heading);
+  font-size: var(--fs-800);
+  font-weight: var(--fw-bold);
 }
