@@ -21,8 +21,8 @@
 <body>
   <main>
     <article class="app-container grid-flow">
-      <div class="card-header grid-flow" data-spacing="large">
-        <div class="flex-group">
+      <header class="card-header grid-flow" data-spacing="large">
+        <div class="headline flex-group">
           <h1 class="app-title">devfinder</h1>
           <button class="btn toggle-btn flex-group">Light
             <svg class="moon-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -32,12 +32,20 @@
             </svg>
           </button>
         </div>
+
         <!-- Search Bar -->
         <form class="search-bar flex-group">
-          <input type="text" id="search-input" placeholder="Search GitHub username...">
+          <div class="search-bar-input flex-group">
+            <img class="search-icon" src="./assets/icon-search.svg" alt="">
+            <input type="text" id="search-input" placeholder="Search GitHub username…">
+          </div>
           <button class="btn search-btn">Search</button>
         </form>
-      </div>
+
+      </header>
+
+
+
 
 
       <!-- <div class="user-card">

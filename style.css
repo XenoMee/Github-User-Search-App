@@ -2,8 +2,8 @@
   /* Colors */
   --clr-body: hsl(227, 100%, 98%);
   --clr-background: hsl(0, 0%, 100%);
+  --clr-foreground: hsl(217, 35%, 45%);
   --clr-heading: hsl(217, 21%, 21%);
-  --clr-text: hsl(217, 35%, 45%);
   --clr-toggle: hsl(217, 20%, 51%);
 
   --clr-accent-500: hsl(212, 100%, 50%);
@@ -78,7 +78,7 @@ General
 */
 body {
   background-color: var(--clr-body);
-  color: var(--clr-text);
+  color: var(--clr-foreground);
   font-family: var(--ff-base);
   font-size: var(--fs-200);
   font-weight: var(--fw-regular);
@@ -103,6 +103,7 @@ body {
 
 .btn {
   font-weight: var(--fw-bold);
+  cursor: pointer;
 }
 
 .toggle-btn {
@@ -132,8 +133,52 @@ body {
   margin-inline: auto;
 }
 
-.card-header > .flex-group {
+.headline {
   justify-content: space-between;
+}
+
+.search-bar {
+  max-width: 100%;
+  flex-wrap: wrap;
+  background-color: var(--clr-background);
+  padding: 0.7rem 1rem;
+  padding-inline-end: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 2px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar-input {
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+input[type='text'] {
+  flex-grow: 1;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+input[type='text']:focus-within {
+  outline: 1px solid var(--clr-toggle);
+}
+
+.search-btn {
+  width: 5.25rem;
+  color: #fff;
+  font-size: var(--fs-300);
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-accent-500);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
 }
 
 /* Utility classes */
