@@ -9,6 +9,10 @@
 
   /* Font Family */
   --fs-base: 'Space Mono', monospace;
+
+  /* Font Weight */
+  --fw-regular: 500;
+  --fw-bold: 700;
 }
 
 /*
