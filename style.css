@@ -2,6 +2,7 @@
   /* Colors */
   --clr-body: hsl(227, 100%, 98%);
   --clr-background: hsl(0, 0%, 100%);
+  --clr-heading: hsl(217, 21%, 21%);
   --clr-text: hsl(217, 35%, 45%);
   --clr-toggle: hsl(217, 20%, 51%);
 
@@ -13,6 +14,8 @@
   /* Font Weight */
   --fw-regular: 500;
   --fw-bold: 700;
+
+  /* Font size */
 }
 
 /*
