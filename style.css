@@ -86,3 +86,9 @@ body {
   font-size: var(--fs-800);
   font-weight: var(--fw-bold);
 }
+
+/* Utility classes */
+.flex-group {
+  display: flex;
+  align-items: center;
+}
