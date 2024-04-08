@@ -107,6 +107,10 @@ body {
   letter-spacing: 2.5px;
 }
 
+.stat-name {
+  font-size: var(--fs-100);
+}
+
 /* Utility classes */
 .flex-group {
   display: flex;
