@@ -108,6 +108,7 @@ body {
 .toggle-btn {
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  gap: 1rem;
 }
 
 .stat-name {
