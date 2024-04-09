@@ -15,10 +15,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Github REST API -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rest.js/15.2.6/octokit-rest.min.js"
-    integrity="sha512-uiSucQ5TdEImoU68Gp+mxXJ54l4lQm5bTd+T0tj7KcCupCDrKr+FdmgXipF+2Exfc6xDAcnPbr5rXB5bEZS0bw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>FEM | GitHub user search app</title>
 </head>
 
@@ -50,7 +46,7 @@
         <form class="search-bar flex-group">
           <div class="search-bar-input flex-group">
             <img class="search-icon" src="./assets/icon-search.svg" alt="">
-            <input type="text" id="search-input" placeholder="Search GitHub username…">
+            <input type="text" id="search-input" placeholder="Search GitHub username…" required>
           </div>
           <button class="btn search-btn">Search</button>
         </form>
@@ -134,6 +130,7 @@
   </main>
 
   <script src="main.js" type="module"></script>
+  <script src="/utilities/github.js"></script>
 </body>
 
 </html>
