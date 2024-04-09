@@ -146,18 +146,16 @@ body {
   border: none;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
-.toggle-btn:is(:hover, :focus) {
+.toggle-btn:is(:hover, :focus) * {
   color: var(--clr-toggle-hover);
-}
-
-.toggle-icon:is(:hover, :focus) {
   fill: var(--clr-toggle-hover);
 }
 
-.moon-icon {
+.moon-icon,
+.sun-icon {
   fill: var(--clr-toggle);
 }
 
