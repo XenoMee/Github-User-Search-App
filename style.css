@@ -47,6 +47,15 @@
   --clr-toggle-hover: #90a4d4;
 }
 
+.light-mode {
+  --clr-body: hsl(227, 100%, 98%);
+  --clr-background: hsl(0, 0%, 100%);
+  --clr-foreground: hsl(217, 35%, 45%);
+  --clr-heading: hsl(217, 21%, 21%);
+  --clr-toggle: hsl(217, 20%, 51%);
+  --clr-toggle-hover: hsl(217, 21%, 21%);
+}
+
 html {
   color-scheme: light dark;
 }
