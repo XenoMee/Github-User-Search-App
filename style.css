@@ -5,6 +5,7 @@
   --clr-foreground: hsl(217, 35%, 45%);
   --clr-heading: hsl(217, 21%, 21%);
   --clr-toggle: hsl(217, 20%, 51%);
+  --clr-toggle-hover: hsl(217, 21%, 21%);
 
   --clr-accent-500: hsl(212, 100%, 50%);
 
@@ -33,7 +34,17 @@
     --clr-foreground: hsl(0, 0%, 100%);
     --clr-heading: hsl(0, 0%, 100%);
     --clr-toggle: hsl(0, 0%, 100%);
+    --clr-toggle-hover: #90a4d4;
   }
+}
+
+.dark-mode {
+  --clr-body: hsl(220, 40%, 13%);
+  --clr-background: hsl(222, 41%, 20%);
+  --clr-foreground: hsl(0, 0%, 100%);
+  --clr-heading: hsl(0, 0%, 100%);
+  --clr-toggle: hsl(0, 0%, 100%);
+  --clr-toggle-hover: #90a4d4;
 }
 
 html {
@@ -127,6 +138,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   gap: 1rem;
+}
+
+.toggle-btn:is(:hover, :focus) {
+  color: var(--clr-toggle-hover);
+}
+
+.toggle-icon:is(:hover, :focus) {
+  fill: var(--clr-toggle-hover);
 }
 
 .moon-icon {
