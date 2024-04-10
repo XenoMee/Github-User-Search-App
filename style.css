@@ -278,6 +278,9 @@ input[type='text']:focus-within {
   text-decoration: none;
   color: var(--clr-foreground);
 }
+.info-item a:is(:hover, :focus) {
+  text-decoration: underline;
+}
 
 .info-item {
   gap: 1rem;
