@@ -236,7 +236,7 @@ input[type='text']:focus-within {
 }
 
 .avatar {
-  max-width: 5rem;
+  min-width: 5rem;
   border-radius: 50%;
 }
 
@@ -320,6 +320,11 @@ input[type='text']:focus-within {
 .grid-flow {
   display: grid;
   gap: 1rem;
+}
+
+.grid-flow[data-spacing='medium'] {
+  display: grid;
+  gap: 2rem;
 }
 
 .grid-flow[data-spacing='large'] {
