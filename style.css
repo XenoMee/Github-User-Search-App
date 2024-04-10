@@ -407,7 +407,7 @@ input[type='text']:focus-within {
 
 @media (min-width: 780px) {
   .user-card {
-    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr;
   }
 
   .search-bar-input {
