@@ -350,6 +350,10 @@ input[type='text']:focus-within {
     font-size: var(--fs-400);
   }
 
+  .avatar {
+    max-width: 7.3rem;
+  }
+
   .user-fullname {
     font-size: var(--fs-800);
   }
@@ -388,5 +392,37 @@ input[type='text']:focus-within {
 
   .twitter {
     grid-area: 1/2/2/2;
+  }
+}
+
+@media (min-width: 780px) {
+  .user-card {
+    grid-template-columns: 0.3fr 1fr 1fr;
+  }
+
+  .search-bar-input {
+    gap: 1.5rem;
+  }
+
+  .user-profile-picture {
+    grid-row: span 4;
+  }
+
+  .profile-header,
+  .user-bio,
+  .user-stats,
+  .user-info {
+    grid-column: span 2;
+  }
+
+  .profile-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .join-date {
+    grid-area: 1/2/2/2;
+    justify-self: end;
+    align-self: center;
   }
 }
