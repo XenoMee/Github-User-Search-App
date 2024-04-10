@@ -219,7 +219,6 @@ input[type='text']:focus-within {
   padding: 0.75rem 1rem;
   border: none;
   transition: background-color 250ms ease-in-out;
-  /* margin-inline-start: auto; */
 }
 
 .search-btn:is(:hover, :focus) {
@@ -236,8 +235,12 @@ input[type='text']:focus-within {
 }
 
 .avatar {
-  min-width: 5rem;
+  min-width: 4.375rem;
   border-radius: 50%;
+}
+
+.profile-header {
+  align-self: center;
 }
 
 .username {
@@ -339,5 +342,51 @@ input[type='text']:focus-within {
 
   .search-btn {
     width: 100%;
+  }
+}
+
+@media (min-width: 570px) {
+  body {
+    font-size: var(--fs-400);
+  }
+
+  .user-fullname {
+    font-size: var(--fs-800);
+  }
+
+  .username {
+    font-size: var(--fs-500);
+  }
+
+  .search-btn {
+    font-size: var(--fs-500);
+  }
+
+  .search-bar-input {
+    gap: 1rem;
+  }
+
+  .search-icon {
+    margin-inline-start: 1rem;
+  }
+
+  .github-stats {
+    text-align: start;
+  }
+
+  .stat-name {
+    font-size: var(--fs-200);
+  }
+
+  .stat-number {
+    font-size: var(--fs-700);
+  }
+
+  .info-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .twitter {
+    grid-area: 1/2/2/2;
   }
 }
