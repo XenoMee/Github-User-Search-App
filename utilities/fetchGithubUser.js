@@ -1,3 +1,5 @@
+import Github from './github.js';
+
 const fetchGithubUser = () => {
   const searchButton = document.querySelector('.search-btn');
   const github = new Github();

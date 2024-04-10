@@ -12,3 +12,5 @@ class Github {
     return { profile };
   }
 }
+
+export default Github;
