@@ -122,6 +122,7 @@ body {
   min-height: 100svh;
 
   display: grid;
+  align-items: center;
 }
 
 ::selection {
