@@ -124,6 +124,11 @@ body {
   display: grid;
 }
 
+::selection {
+  background-color: var(--clr-heading);
+  color: var(--clr-background);
+}
+
 /* Typography */
 .app-title,
 .user-fullname,
@@ -343,9 +348,13 @@ input[type='text']:focus-within {
   .search-btn {
     width: 100%;
   }
+
+  .user-stats {
+    padding: 0.5rem 1rem;
+  }
 }
 
-@media (min-width: 570px) {
+@media (min-width: 600px) {
   body {
     font-size: var(--fs-400);
   }
@@ -390,7 +399,7 @@ input[type='text']:focus-within {
     grid-template-columns: 1fr 1fr;
   }
 
-  .twitter {
+  .twitter_username {
     grid-area: 1/2/2/2;
   }
 }
