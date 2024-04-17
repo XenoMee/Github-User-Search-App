@@ -149,3 +149,5 @@ class UI {
     this.profileCard.innerHTML = '';
   }
 }
+
+export default UI;
