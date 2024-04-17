@@ -140,6 +140,7 @@ body {
 
 .app-title {
   font-size: var(--fs-800);
+  user-select: none;
 }
 
 .btn {
