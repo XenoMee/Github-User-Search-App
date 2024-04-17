@@ -1,4 +1,5 @@
 import Github from './github.js';
+import UI from './UI.js';
 
 const fetchGithubUser = () => {
   const searchButton = document.querySelector('.search-btn');
