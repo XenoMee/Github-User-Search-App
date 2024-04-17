@@ -15,7 +15,7 @@ const toggleDarkMode = () => {
     document.body.classList.add('light-mode');
   };
 
-  const displayTheme = (theme) => {
+  const displayColorSchemeName = (theme) => {
     themeName.textContent = theme;
   };
 
@@ -32,19 +32,19 @@ const toggleDarkMode = () => {
     localStorage.setItem('Dark Mode', 'enabled');
     addDarkModeClass();
     displaySunIcon();
-    displayTheme('Light');
+    displayColorSchemeName('Light');
   };
 
   const disableDarkMode = () => {
     localStorage.setItem('Dark Mode', null);
     addLightModeClass();
     displayMoonIcon();
-    displayTheme('Dark');
+    displayColorSchemeName('Dark');
   };
 
   if (prefersDarkScheme) {
     localStorage.setItem('Dark Mode', 'enabled');
-    displayTheme('Light');
+    displayColorSchemeName('Light');
     displaySunIcon();
   }
 
