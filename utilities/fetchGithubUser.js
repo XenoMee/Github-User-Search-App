@@ -10,7 +10,10 @@ const fetchGithubUser = () => {
 
   searchButton.addEventListener('click', (e) => {
     e.preventDefault();
-    if (ui.searchInput.value === '') return;
+    if (ui.searchInput.value === '') {
+      ui.showAlert('Enter a username!', 'not-found');
+      return;
+    }
 
     github.getUser(ui.searchInput.value).then((data) => {
       data.profile.message === 'Not Found'
