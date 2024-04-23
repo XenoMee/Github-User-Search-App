@@ -94,6 +94,15 @@ class UI {
     `;
   }
 
+  showNotFound() {
+    this.profileCard.innerHTML = `
+      <div class="user-not-found">
+        <span class="title-404">404</span>
+        <h2 class="message-404">The user does not exist!</h2>
+      </div>
+    `;
+  }
+
   formatDate(date) {
     const joinedDate = new Date(date);
     const months = [

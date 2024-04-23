@@ -16,9 +16,10 @@ const fetchGithubUser = () => {
     }
 
     github.getUser(ui.searchInput.value).then((data) => {
-      data.profile.message === 'Not Found'
-        ? ui.showAlert('No results', 'not-found')
-        : ui.showProfile(data.profile);
+      if (data.profile.message === 'Not Found') {
+        ui.showAlert('No results', 'not-found');
+        ui.showNotFound();
+      } else ui.showProfile(data.profile);
     });
 
     ui.clearProfile();

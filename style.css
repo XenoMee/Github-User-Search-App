@@ -143,6 +143,14 @@ body {
   user-select: none;
 }
 
+.title-404 {
+  font-size: 2.5rem;
+}
+
+.message-404 {
+  font-size: var(--fs-600);
+}
+
 .btn {
   font-weight: var(--fw-bold);
   cursor: pointer;
@@ -239,6 +247,12 @@ input[type='text']:focus-within {
   border-radius: 0.7rem;
   padding: var(--content-spacing);
   box-shadow: 0 0 1rem 2px rgba(0, 0, 0, 0.3);
+}
+
+.user-not-found {
+  grid-column: span 3;
+  justify-self: center;
+  text-align: center;
 }
 
 .avatar {
@@ -385,6 +399,10 @@ input[type='text']:focus-within {
     margin-inline-start: 1rem;
   }
 
+  .message-404 {
+    font-size: var(--fs-700);
+  }
+
   .github-stats {
     text-align: start;
   }
@@ -413,6 +431,10 @@ input[type='text']:focus-within {
 
   .search-bar-input {
     gap: 1.5rem;
+  }
+
+  .message-404 {
+    font-size: var(--fs-800);
   }
 
   .user-profile-picture {
